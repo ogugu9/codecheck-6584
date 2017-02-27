@@ -19,11 +19,24 @@ export class Rectangle extends Polygon {
 }
 
 export class Square {
-  
+
+  constructor(length) {
+    this.name = "Square";
+    this.width = length;
+    this.height = length;
+  }
+
+  get area() { return this.width * this.height; }
 }
 
 export class Circle {
-  
+
+  constructor(radius) {
+    this.name = "Circle";
+    this.radius = radius;
+    this.width = radius*2;
+    this.height = radius*2;
+  }
+
+  get area() { return Math.pow(this.radius,2) * Math.PI; }
 }
-
-
